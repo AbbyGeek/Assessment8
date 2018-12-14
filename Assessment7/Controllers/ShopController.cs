@@ -10,6 +10,7 @@ namespace Assessment7.Controllers
     public class ShopController : Controller
     {
         // GET: Shop
+       [Authorize]
         public ActionResult Index()
         {
             ShopEntities ORM = new ShopEntities();

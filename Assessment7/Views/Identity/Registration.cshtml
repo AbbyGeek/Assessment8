@@ -1,0 +1,19 @@
+﻿@model Assessment7.Models.Registration
+@{
+    ViewBag.Title = "Registration";
+}
+
+<h2>Registration</h2>
+
+<form action="~/Identity/Registration" method="post">
+    <label for="UserName">User Name: </label>
+    <input type="text" id="UserName" name="UserName" /> <br />
+
+    <label for="Password">Password: </label>
+    <input type="password" id="Password" name="Password" /> <br />
+
+    <label for="Email">Email: </label>
+    <input type="text" id="Email" name="Email" />
+
+    <button type="submit">Submit</button>
+</form>
